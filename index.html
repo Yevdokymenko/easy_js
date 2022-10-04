@@ -5,8 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Easy JS</title>
+    <!--Додаємо шрифти-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Додаємо нормалізатор -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <!-- Додаємо стилі SASS -->
     <link rel="stylesheet" href="./sass/main.css" />
+
+    <title>Easy JS</title>
   </head>
   <body>
     <div class="main-menu">
@@ -30,5 +47,100 @@
     <div class="main-js-menu">тут буде різні назви для js розробок</div>
     <div class="main-page">туту буде головна сторінка</div>
     <div class="main-counters">тут будуть лічільники</div>
+
+    <div class="contact-us-contacts">
+      <section class="contact_us">
+        <div class="container">
+          <div class="online">
+            <h2>Онлайн-запись</h2>
+            <form>
+              <div class="name-number">
+                <label for="name"
+                  >Имя*
+                  <input type="text" name="name" id="name" class="name" />
+                </label>
+                <label
+                  >Телефон*
+                  <input type="number" class="number" />
+                </label>
+              </div>
+              <label>
+                Сообщение*
+                <input class="text" type="text" />
+              </label>
+              <button class="button">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <h2>Контакты</h2>
+          <ul>
+            <li>
+              <address>
+                <svg width="24" height="24">
+                  <use href="./images/sprite.svg#map"></use></svg
+                >ул. Васильковая, 7А Киев, 08132
+              </address>
+            </li>
+            <li>
+              <a class="phone" href="tel:+38 044 111 11 11">
+                <svg width="24" height="24">
+                  <use href="./images/sprite.svg#phone"></use></svg
+                >+38 044 111 11 11</a
+              >
+            </li>
+            <li>
+              <a class="email" href="mailto:barbershop@email.com"
+                ><svg width="24" height="24">
+                  <use href="./images/sprite.svg#mail"></use></svg
+                >barbershop@email.com</a
+              >
+            </li>
+          </ul>
+          <p class="title">время работы</p>
+          <p class="time">Ежедневно с 9:00 до 22:00</p>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <span>
+          <svg width="12" height="12">
+            <use href="./images/sprite.svg#copyright"></use></svg
+          >Copyright 2020</span
+        >
+        <ul>
+          <li class="title"><a href="">Instagram</a></li>
+          <li><a href="">Youtube</a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button-close" data-modal-close>
+          <svg width="24" height="16">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="modal-nav">
+          <li><a href="">О нас</a></li>
+          <li><a href="">Услуги и цены</a></li>
+          <li><a href="">Мастера</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+
+        <ul class="modal-contacts">
+          <li><a href="tel:+38 044 111 11 11">+38 044 111 11 11</a></li>
+          <li><button>онлайн-запись</button></li>
+        </ul>
+
+        <ul class="modal-social">
+          <li><a href="" class="title">Instagram</a></li>
+          <li><a href="">Youtube</a></li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

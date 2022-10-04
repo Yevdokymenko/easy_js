@@ -1,10 +1,20 @@
-* {
+@import "~node_modules/modern-normalize/modern-normalize.css";
+
+html {
   box-sizing: border-box;
+  margin: 0 auto;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Titan One", cursive;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  font-size: 1em;
-  line-height: 1.5;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.93;
+  letter-spacing: 0.04em;
   color: rgb(0, 0, 0);
   margin: 0;
   width: 100%;
